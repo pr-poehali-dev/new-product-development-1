@@ -12,56 +12,56 @@ const testimonials = [
     testimonial:
       "Мой герой кажется простым новеньким, но за его уверенностью прячется человек, который очень хочет, чтобы его наконец заметили и приняли.",
     by: "Григорий Верник, играет Антона",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Anton&backgroundColor=991b1b&textColor=ffffff",
+    imgSrc: "https://cdn.poehali.dev/projects/87640017-3bee-4b53-a485-85924f43b28f/files/80b03b5f-df29-4741-9397-14803f9f85fb.jpg",
   },
   {
     tempId: 1,
     testimonial:
       "Алина почти всё время молчит, и это было самым сложным — играть так, чтобы зритель чувствовал бурю эмоций без единого слова.",
     by: "Софья Аржаных, играет Алину",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Alina&backgroundColor=6d28d9&textColor=ffffff",
+    imgSrc: "https://cdn.poehali.dev/projects/87640017-3bee-4b53-a485-85924f43b28f/files/d5741957-caee-40e4-a7e3-69d72d44d0fc.jpg",
   },
   {
     tempId: 2,
     testimonial:
       "Снимать сцены вечеринок было весело и страшно одновременно — ты понимаешь, что именно здесь всё пойдёт не так.",
     by: "Илья Виногорский, играет Марка",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Mark&backgroundColor=3f3f46&textColor=ffffff",
+    imgSrc: "https://cdn.poehali.dev/projects/87640017-3bee-4b53-a485-85924f43b28f/files/529bb710-e533-4f56-88ef-f9a028345d1f.jpg",
   },
   {
     tempId: 3,
     testimonial:
       "Мне близка тема разных миров — когда у одних есть всё, а другие добиваются места под солнцем сами. В сериале это чувствуется в каждой сцене.",
     by: "Кирилл Буханцев, играет Алекса",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Alex&backgroundColor=065f46&textColor=ffffff",
+    imgSrc: "https://cdn.poehali.dev/projects/87640017-3bee-4b53-a485-85924f43b28f/files/bc02779a-62e7-47c6-bd50-195d1a6c97dd.jpg",
   },
   {
     tempId: 4,
     testimonial:
       "Сеня — самая тихая роль и самая громкая тайна. Когда я прочитал сценарий до финала, у меня мурашки пошли по коже.",
     by: "Савелий Наумов, играет Сеню",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Senya&backgroundColor=171717&textColor=ffffff",
+    imgSrc: "https://cdn.poehali.dev/projects/87640017-3bee-4b53-a485-85924f43b28f/files/e0393120-b4fc-4fc5-ae79-8b50ea4d0770.jpg",
   },
   {
     tempId: 5,
     testimonial:
       "Играть отца Антона и одновременно быть режиссёром — двойная ответственность. Я хотел, чтобы каждый герой был живым человеком, а не маской.",
     by: "Евгений Стычкин, режиссёр и актёр",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Director&backgroundColor=7f1d1d&textColor=ffffff",
+    imgSrc: "https://cdn.poehali.dev/projects/87640017-3bee-4b53-a485-85924f43b28f/files/bdf17119-d278-477b-a810-98f0e5454805.jpg",
   },
   {
     tempId: 6,
     testimonial:
       "Это история про то, как взрослые своими решениями ломают мир детей. Мне было важно показать цену таких ошибок.",
     by: "Елизавета Боярская, взрослый каст",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Boyarskaya&backgroundColor=be185d&textColor=ffffff",
+    imgSrc: "https://cdn.poehali.dev/projects/87640017-3bee-4b53-a485-85924f43b28f/files/874f136f-d72d-4630-918b-916a8c1b96e0.jpg",
   },
   {
     tempId: 7,
     testimonial:
       "Формат допроса держит в напряжении даже нас, актёров. До последнего не верится, чем всё закончится.",
     by: "Артём Быстров, взрослый каст",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=Bystrov&backgroundColor=0f766e&textColor=ffffff",
+    imgSrc: "https://cdn.poehali.dev/projects/87640017-3bee-4b53-a485-85924f43b28f/files/96a1c424-fbb5-4c1a-97ba-73b7221bc861.jpg",
   },
 ]
 
