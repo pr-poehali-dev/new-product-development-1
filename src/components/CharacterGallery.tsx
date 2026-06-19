@@ -6,8 +6,7 @@ interface Character {
   actor: string
   role: string
   description: string
-  gradient: string
-  initial: string
+  photo: string
   locked?: boolean
   appearsFrom?: string
 }
@@ -19,8 +18,7 @@ const characters: Character[] = [
     role: "Богатый новенький",
     description:
       "Сын влиятельного бизнесмена. Закатывает вечеринки и привык получать всё, что хочет. Вокруг него закручивается главный конфликт.",
-    gradient: "from-red-900 via-rose-800 to-black",
-    initial: "А",
+    photo: "https://cdn.poehali.dev/projects/87640017-3bee-4b53-a485-85924f43b28f/files/87d3f0ae-e6bf-4d3a-bb5e-aa25b99fb6be.jpg",
   },
   {
     name: "Алина",
@@ -28,8 +26,7 @@ const characters: Character[] = [
     role: "Тихая и замкнутая",
     description:
       "Загадочная девушка, которая неожиданно привлекает внимание Антона. За её молчанием скрывается куда больше, чем кажется.",
-    gradient: "from-purple-900 via-indigo-800 to-black",
-    initial: "А",
+    photo: "https://cdn.poehali.dev/projects/87640017-3bee-4b53-a485-85924f43b28f/files/91e08344-fec5-4862-b785-3d04b80dfe26.jpg",
   },
   {
     name: "Марк",
@@ -37,8 +34,7 @@ const characters: Character[] = [
     role: "Наблюдатель",
     description:
       "Часть одной из центральных пар. Внимательно следит за происходящим вокруг — и знает больше остальных.",
-    gradient: "from-slate-800 via-zinc-700 to-black",
-    initial: "М",
+    photo: "https://cdn.poehali.dev/projects/87640017-3bee-4b53-a485-85924f43b28f/files/9568af8c-b6dc-4e37-a036-137922d1b640.jpg",
   },
   {
     name: "Соня",
@@ -46,8 +42,7 @@ const characters: Character[] = [
     role: "Девушка Марка",
     description:
       "Вторая половина центральной пары. Её отношения с Марком окажутся не такими простыми, как выглядят со стороны.",
-    gradient: "from-rose-900 via-pink-800 to-black",
-    initial: "С",
+    photo: "https://cdn.poehali.dev/projects/87640017-3bee-4b53-a485-85924f43b28f/files/7f9e6cfd-8349-4fce-bbce-af9ba099471d.jpg",
     locked: true,
     appearsFrom: "2 серии",
   },
@@ -57,8 +52,7 @@ const characters: Character[] = [
     role: "Из небогатой семьи",
     description:
       "Парень, которому всё даётся трудом. Контраст с миром Антона создаёт напряжение, ведущее к развязке.",
-    gradient: "from-emerald-900 via-teal-800 to-black",
-    initial: "А",
+    photo: "https://cdn.poehali.dev/projects/87640017-3bee-4b53-a485-85924f43b28f/files/f4beccc9-5ab2-43a2-823f-a7a68d37b900.jpg",
     locked: true,
     appearsFrom: "2 серии",
   },
@@ -68,8 +62,7 @@ const characters: Character[] = [
     role: "Девушка Алекса",
     description:
       "Вместе с Алексом — пара из небогатых семей. Их история — про деньги, гордость и сложный выбор.",
-    gradient: "from-amber-900 via-orange-800 to-black",
-    initial: "К",
+    photo: "https://cdn.poehali.dev/projects/87640017-3bee-4b53-a485-85924f43b28f/files/ad049000-5702-46a9-95c3-114848e30baf.jpg",
     locked: true,
     appearsFrom: "3 серии",
   },
@@ -79,8 +72,7 @@ const characters: Character[] = [
     role: "Тихий «пухлик»",
     description:
       "Незаметный одноклассник, которого никто не воспринимает всерьёз. В финале именно он окажется убийцей.",
-    gradient: "from-zinc-900 via-neutral-800 to-black",
-    initial: "С",
+    photo: "https://cdn.poehali.dev/projects/87640017-3bee-4b53-a485-85924f43b28f/files/e5f970d3-b18c-48b2-9d2e-3ade38d756dd.jpg",
     locked: true,
     appearsFrom: "финала",
   },
@@ -90,8 +82,7 @@ const characters: Character[] = [
     role: "Бизнесмен · режиссёр",
     description:
       "Влиятельный отец, чьи деньги решают многое. Сыграл сам режиссёр сериала Евгений Стычкин.",
-    gradient: "from-red-950 via-red-900 to-black",
-    initial: "О",
+    photo: "https://cdn.poehali.dev/projects/87640017-3bee-4b53-a485-85924f43b28f/files/34f02342-b996-45dc-a8f1-7ada48131dca.jpg",
     locked: true,
     appearsFrom: "4 серии",
   },
@@ -111,19 +102,20 @@ export default function CharacterGallery() {
             className="group relative overflow-hidden rounded-2xl border border-white/10 bg-card"
           >
             {/* Portrait */}
-            <div
-              className={`relative aspect-[3/4] bg-gradient-to-br ${char.gradient} flex items-center justify-center`}
-            >
-              <span
-                className={`text-8xl font-black text-white/20 ${
-                  char.locked ? "blur-sm" : ""
+            <div className="relative aspect-[3/4] overflow-hidden bg-black">
+              <img
+                src={char.photo}
+                alt={char.name}
+                className={`w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105 ${
+                  char.locked ? "blur-md scale-105" : ""
                 }`}
-              >
-                {char.initial}
-              </span>
+              />
+
+              {/* Gradient overlay at bottom */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
               {char.locked && (
-                <div className="absolute inset-0 backdrop-blur-md bg-black/50 flex flex-col items-center justify-center gap-3 px-4 text-center">
+                <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center gap-3 px-4 text-center">
                   <Icon name="Lock" size={32} className="text-primary" />
                   <p className="text-white font-semibold text-sm">
                     Появляется
